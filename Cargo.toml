@@ -16,6 +16,8 @@ serde_json = "1.0.67"
 tide = { git = "https://github.com/logankeenan/tide.git", features = ["wasm"], branch = "wasm", default-features = false }
 #notes-demo = { path = "../notes-demo" }
 notes-demo = { git = "https://github.com/rora-rs/note-demo", branch = "main" }
+#tide-adapter = { path = "../tide-adapter" }
+tide-adapter = { git = "https://github.com/rora-rs/tide-adapter.git", branch = "main" }
 
 
 # The `console_error_panic_hook` crate provides better debugging of panics by

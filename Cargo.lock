@@ -1070,15 +1070,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1aab8fc367588b89dcee83ab0fd66b72b50b72fa1904d7095045ace2b0c81c35"
 
 [[package]]
-name = "javascript-adapter"
-version = "0.1.0"
-source = "git+https://github.com/rora-rs/javascript-adapter.git?branch=main#04bc7c02479399f3d72ce4e4a1d81eae89c8e623"
-dependencies = [
- "serde",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "js-sys"
 version = "0.3.56"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1219,9 +1210,9 @@ dependencies = [
  "cfg-if 0.1.10",
  "console_error_panic_hook",
  "notes-demo",
+ "rora-tide-adapter",
  "serde_json",
  "tide",
- "tide-adapter",
  "worker",
 ]
 
@@ -1523,6 +1514,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7d707a4fa2637f2dca2ef9fd02225ec7661fe01a53623c1e6515b6916511f7a7"
 dependencies = [
  "ucd-util",
+]
+
+[[package]]
+name = "rora-javascript-adapter"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "673fea8993d9e7307d3daef91a4647e90cde70cf0f602ff9e1674fba40549f27"
+dependencies = [
+ "serde",
+ "wasm-bindgen",
+]
+
+[[package]]
+name = "rora-tide-adapter"
+version = "0.0.1"
+source = "git+https://github.com/rora-rs/tide-adapter.git?branch=main#1b89fddc2576aa413336692ccd9d127e4be8f6ed"
+dependencies = [
+ "rora-javascript-adapter",
+ "tide",
+ "worker",
 ]
 
 [[package]]
@@ -1905,16 +1916,6 @@ dependencies = [
  "routefinder",
  "serde",
  "serde_json",
-]
-
-[[package]]
-name = "tide-adapter"
-version = "0.1.0"
-source = "git+https://github.com/rora-rs/tide-adapter.git?branch=main#796e23bb9351a046590dfe7bccaaa36f3f87e25f"
-dependencies = [
- "javascript-adapter",
- "tide",
- "worker",
 ]
 
 [[package]]

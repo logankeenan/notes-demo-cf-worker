@@ -1,7 +1,7 @@
 use notes_demo::AppState;
 use worker::*;
 use tide::http::{Response as TideResponse};
-use tide_adapter::cf_worker;
+use rora_tide_adapter::cf_worker;
 
 mod utils;
 

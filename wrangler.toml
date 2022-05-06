@@ -1,4 +1,4 @@
-name = "notes-demo-worker"
+name = "notes-demo-cf-worker"
 type = "javascript"
 workers_dev = true
 compatibility_date = "2022-01-21"

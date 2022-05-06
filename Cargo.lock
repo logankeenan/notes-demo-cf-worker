@@ -1204,7 +1204,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "notes-demo-worker"
+name = "notes-demo-cf-worker"
 version = "0.1.0"
 dependencies = [
  "cfg-if 0.1.10",

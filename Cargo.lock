@@ -1194,7 +1194,7 @@ dependencies = [
 [[package]]
 name = "notes-demo"
 version = "0.1.0"
-source = "git+https://github.com/rora-rs/note-demo?branch=main#0583c2cc960438eea7259c811ff65f08d3f5e769"
+source = "git+https://github.com/rora-rs/note-demo?branch=main#50a643ba345c0b00cb191a3753dc1f9894c566ee"
 dependencies = [
  "askama",
  "pulldown-cmark",
@@ -1898,14 +1898,13 @@ dependencies = [
 [[package]]
 name = "tide"
 version = "0.17.0-beta.1"
-source = "git+https://github.com/logankeenan/tide.git?branch=wasm#d3b8cb643d76af6c0f6ecef5349474451d3db5b9"
+source = "git+https://github.com/logankeenan/tide.git?branch=wasm#e17769f7f2051cccd70be7a55bf4716c6ea44064"
 dependencies = [
  "async-h1",
  "async-session",
  "async-sse",
  "async-std",
  "async-trait",
- "cfg-if 1.0.0",
  "femme",
  "futures-util",
  "http-client",
